@@ -1787,7 +1787,6 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\uQA1fhyh.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\pcEKCmfs.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\BCQP1ukm.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\86FjIXO+.gz
-C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\ccxW0k+5.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\1GWOCDy4.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\7OGEYxUf.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\7womLbQh.gz
@@ -1990,3 +1989,15 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\ref\Planner.App.dll
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Planner.App.pdb
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\serviceworkers\wwwroot\service-worker.js
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\service-worker-assets.js
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\Blazored.FluentValidation.dll.gz
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\Planner.Client.Services.dll.gz
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\Blazored.FluentValidation.dll
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\Planner.Client.Services.dll
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\Planner.Client.Services.pdb
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Authentication\RegisterForm.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Authentication\RegisterForm.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\rqrL1jgr.gz
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\hrhSDJJc.gz
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\NTwmWYRK.gz
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Pages\Authentication\Register.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Authentication\Register.razor.g.cs

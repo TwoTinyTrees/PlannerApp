@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.FluentValidation.dll": "sha256-Yd+TgjggnGAP41alBqq4QQNW1P2sDk9W0RytHV+VFw8=",
       "Blazored.LocalStorage.dll": "sha256-ItMv+HytRb8SgPKYiz75PK0k+DFgN1E247PZT\/8lODs=",
       "FluentValidation.dll": "sha256-ICZwzUI5uclncCyLXRZWnt4YD5C\/Dgw\/TPJFuvg8HSs=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-v2n7Q6PfIiAvv9anCBl0llzwtdxr0iCZZar3ne8Bxds=",
@@ -22,7 +23,7 @@
       "Microsoft.Extensions.Configuration.FileExtensions.dll": "sha256-5tCmu87qBh0Xgsp\/dG\/x9WHctz\/J8YBmCHjt+PA6dn0=",
       "Microsoft.Extensions.Configuration.Json.dll": "sha256-OM0kYGXmRhgJOUP2Vf86pt4Ss7QB2\/fLPtfL4+p0Xz8=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-W\/Xy5S\/Zin\/Xx5oGhOYdTkJLd1mRSie5cNH7qKtU7ZA=",
-      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-D9y5RXbA\/sEzwk6cnGbGMKQv87bvOEEVycrLUTe0lGU=",
+      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-WmhXWWzy\/w3N0RiPmLJQxZcmPGQAdtfI9IK+YaOY0Yc=",
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-aUKLFqSgB\/hwZc41dLVKoRSKRghShpfQPVMhoRzpz5M=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-Cvhy7j568oPzBQKhakMhNkDr5tQBxE0LaY1wukd0Ll0=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-xrpMDo35bgwz\/m\/kwUvL9SAOxyEgSSwO57RiuhILHgI=",
@@ -204,15 +205,17 @@
       "mscorlib.dll": "sha256-0qsbc1acYr3S6P7t9gSYyghOhMVs3CTJ9ukQ1VXqksY=",
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
+      "Planner.Client.Services.dll": "sha256-Nt7MxwfHsLkEBat6b+5JZ6+LTHUW7338cYUxMWWfQl4=",
       "Planner.Shared.dll": "sha256-NtHqzdQwI9WFpbbuzHWo8T8QEaLZk8cjUFpVenyIfoc=",
-      "Planner.App.dll": "sha256-m5Kj4du8nVXTWsLMlLFMXAkuELn24WAJyX2g91+hz+c="
+      "Planner.App.dll": "sha256-1lfp5pjYz\/Nl1XI3h3dHW6CoxrC7Lt\/ma8PhDvCJQvQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
+      "Planner.Client.Services.pdb": "sha256-38PJyU2taJfWWCoRcsgBmaP4ZbdUVRMMNxMTJZddTIM=",
       "Planner.Shared.pdb": "sha256-dJ0uHjBfkb1wUO9Yc31pvJgA794QfCvysRMk8I6aM0w=",
-      "Planner.App.pdb": "sha256-HXuV+efodGOumJ3FNaiXBqcLUJOlwzcN3\/VfJJ+rsjg="
+      "Planner.App.pdb": "sha256-R8oSZwB90uVYFiUsFP7TTbXw7lGCVrh5+ZKeSe6WUts="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

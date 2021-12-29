@@ -7,6 +7,8 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Planner.App;
+using Planner.Client.Services.Interfaces;
+using Planner.Client.Services;
 
 namespace Planner.App
 {
@@ -29,6 +31,7 @@ namespace Planner.App
             builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddAuthorizationCore();
             builder.Services.AddScoped<AuthenticationStateProvider, JwtAuthenticationStateProvider>();
+            builder.Services.AddHttpClientServices();
 
             await builder.Build().RunAsync();
         }

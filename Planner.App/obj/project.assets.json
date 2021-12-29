@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Blazored.FluentValidation/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "[10.2.1, 11.0.0)",
+          "Microsoft.AspNetCore.Components": "3.1.14",
+          "Microsoft.AspNetCore.Components.Web": "3.1.14"
+        },
+        "compile": {
+          "lib/netstandard2.1/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Blazored.FluentValidation.dll": {}
+        }
+      },
       "Blazored.LocalStorage/4.1.5": {
         "type": "package",
         "dependencies": {
@@ -220,13 +234,16 @@
           "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
@@ -446,6 +463,20 @@
           }
         }
       },
+      "Planner.Client.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Planner.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Planner.Client.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Planner.Client.Services.dll": {}
+        }
+      },
       "Planner.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -461,6 +492,20 @@
       }
     },
     "net5.0/browser-wasm": {
+      "Blazored.FluentValidation/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "[10.2.1, 11.0.0)",
+          "Microsoft.AspNetCore.Components": "3.1.14",
+          "Microsoft.AspNetCore.Components.Web": "3.1.14"
+        },
+        "compile": {
+          "lib/netstandard2.1/Blazored.FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Blazored.FluentValidation.dll": {}
+        }
+      },
       "Blazored.LocalStorage/4.1.5": {
         "type": "package",
         "dependencies": {
@@ -679,13 +724,16 @@
           "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
@@ -899,6 +947,20 @@
           "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
         }
       },
+      "Planner.Client.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Planner.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Planner.Client.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Planner.Client.Services.dll": {}
+        }
+      },
       "Planner.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -915,6 +977,19 @@
     }
   },
   "libraries": {
+    "Blazored.FluentValidation/2.0.3": {
+      "sha512": "YL+E/JGoyVODn0azRJtmfK48iZXpD9Jy6fQOyofAl6F++ELMqupKygN/aG0QZd92j9eCV5syUmz0QYDwmS+3qA==",
+      "type": "package",
+      "path": "blazored.fluentvalidation/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.fluentvalidation.2.0.3.nupkg.sha512",
+        "blazored.fluentvalidation.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/Blazored.FluentValidation.dll"
+      ]
+    },
     "Blazored.LocalStorage/4.1.5": {
       "sha512": "i9v27ScPOsHv6skc+isE+DZ/mtR53w019Nq2/MnjvpiLV2otbnqqyxfiYnXAU0Ho6MBIvAS2gdf+odbAyDZPzw==",
       "type": "package",
@@ -1310,24 +1385,29 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
-      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
@@ -1734,6 +1814,11 @@
         "version.txt"
       ]
     },
+    "Planner.Client.Services/1.0.0": {
+      "type": "project",
+      "path": "../Planner.Client.Services/Planner.Client.Services.csproj",
+      "msbuildProject": "../Planner.Client.Services/Planner.Client.Services.csproj"
+    },
     "Planner.Shared/1.0.0": {
       "type": "project",
       "path": "../Planner.Shared/Planner.Shared.csproj",
@@ -1742,12 +1827,14 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Blazored.FluentValidation >= 2.0.3",
       "Blazored.LocalStorage >= 4.1.5",
       "Microsoft.AspNetCore.Components.Authorization >= 5.0.13",
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.13",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.13",
       "Microsoft.Extensions.Http >= 5.0.0",
       "MudBlazor >= 5.2.0",
+      "Planner.Client.Services >= 1.0.0",
       "Planner.Shared >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.15.0",
       "System.Net.Http.Json >= 5.0.0"
@@ -1787,6 +1874,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Github\\Practice\\Planner.Client.Services\\Planner.Client.Services.csproj": {
+              "projectPath": "C:\\Github\\Practice\\Planner.Client.Services\\Planner.Client.Services.csproj"
+            },
             "C:\\Github\\Practice\\Planner.Shared\\Planner.Shared.csproj": {
               "projectPath": "C:\\Github\\Practice\\Planner.Shared\\Planner.Shared.csproj"
             }
@@ -1803,6 +1893,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Blazored.FluentValidation": {
+            "target": "Package",
+            "version": "[2.0.3, )"
+          },
           "Blazored.LocalStorage": {
             "target": "Package",
             "version": "[4.1.5, )"

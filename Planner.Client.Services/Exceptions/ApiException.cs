@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Planner.Client.Services.Exceptions
 {
-    class ApiException : Exception
+    public class ApiException : Exception
     {
         public ApiErrorResponse ApiErrorResponse { get; set; }
         public HttpStatusCode StatusCode { get; set; }

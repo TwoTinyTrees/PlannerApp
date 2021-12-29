@@ -56,5 +56,10 @@ namespace Planner.App.Components
 
             _isBusy = false;
         }
+
+        private void RedirectToRegister()
+        {
+            Navigation.NavigateTo("/authentication/register");
+        }
     }
 }

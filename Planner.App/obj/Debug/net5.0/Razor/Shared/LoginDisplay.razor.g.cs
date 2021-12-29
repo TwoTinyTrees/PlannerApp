@@ -108,6 +108,13 @@ using MudBlazor;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "C:\Github\Practice\Planner.App\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Github\Practice\Planner.App\Shared\LoginDisplay.razor"
 using System.Security.Claims;
 

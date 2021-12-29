@@ -9,8 +9,12 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     },
     {
-      "hash": "sha256-gE5FJja58mugUwd60i04nq2UakY3BtzoBTtvY1knY5k=",
+      "hash": "sha256-Fxw0UhK1zfmbSpJc7L3d5HLpgDZwi6fc0azDvcDzwaU=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-Yd+TgjggnGAP41alBqq4QQNW1P2sDk9W0RytHV+VFw8=",
+      "url": "_framework\/Blazored.FluentValidation.dll"
     },
     {
       "hash": "sha256-ItMv+HytRb8SgPKYiz75PK0k+DFgN1E247PZT\/8lODs=",
@@ -73,7 +77,7 @@
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.dll"
     },
     {
-      "hash": "sha256-D9y5RXbA\/sEzwk6cnGbGMKQv87bvOEEVycrLUTe0lGU=",
+      "hash": "sha256-WmhXWWzy\/w3N0RiPmLJQxZcmPGQAdtfI9IK+YaOY0Yc=",
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
@@ -829,24 +833,36 @@
       "url": "_framework\/dotnet.5.0.13.js"
     },
     {
+      "hash": "sha256-Nt7MxwfHsLkEBat6b+5JZ6+LTHUW7338cYUxMWWfQl4=",
+      "url": "_framework\/Planner.Client.Services.dll"
+    },
+    {
       "hash": "sha256-NtHqzdQwI9WFpbbuzHWo8T8QEaLZk8cjUFpVenyIfoc=",
       "url": "_framework\/Planner.Shared.dll"
+    },
+    {
+      "hash": "sha256-38PJyU2taJfWWCoRcsgBmaP4ZbdUVRMMNxMTJZddTIM=",
+      "url": "_framework\/Planner.Client.Services.pdb"
     },
     {
       "hash": "sha256-dJ0uHjBfkb1wUO9Yc31pvJgA794QfCvysRMk8I6aM0w=",
       "url": "_framework\/Planner.Shared.pdb"
     },
     {
-      "hash": "sha256-m5Kj4du8nVXTWsLMlLFMXAkuELn24WAJyX2g91+hz+c=",
+      "hash": "sha256-1lfp5pjYz\/Nl1XI3h3dHW6CoxrC7Lt\/ma8PhDvCJQvQ=",
       "url": "_framework\/Planner.App.dll"
     },
     {
-      "hash": "sha256-HXuV+efodGOumJ3FNaiXBqcLUJOlwzcN3\/VfJJ+rsjg=",
+      "hash": "sha256-R8oSZwB90uVYFiUsFP7TTbXw7lGCVrh5+ZKeSe6WUts=",
       "url": "_framework\/Planner.App.pdb"
     },
     {
       "hash": "sha256-dl8FVRvWOJfOtzIC\/x66QNnBNsT9cAOMrn22GB8fJ8U=",
       "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-nequ713ZuJMKRAVy8KtBn\/iNJfZVGWWK0Py9U79yvVk=",
+      "url": "_framework\/Blazored.FluentValidation.dll.gz"
     },
     {
       "hash": "sha256-oVBXtft96+EfmewWuvFoHSqdmNLREmcH2yVLM\/+\/8OY=",
@@ -909,7 +925,7 @@
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.dll.gz"
     },
     {
-      "hash": "sha256-HbDChTysTbG4GNxg1MJz5PEcyMYGLQwdh6Djl9t9fhw=",
+      "hash": "sha256-SoAXTHX2zHY29ax72sK0fDi5juR1NYtEhE8iHwyymLk=",
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
@@ -1665,6 +1681,10 @@
       "url": "_framework\/dotnet.5.0.13.js.gz"
     },
     {
+      "hash": "sha256-qLIv8RFbRDMAwMABXLEopMC9Wxup5RTrXGBkUznWdTk=",
+      "url": "_framework\/Planner.Client.Services.dll.gz"
+    },
+    {
       "hash": "sha256-078KeN0INmGsfPbbyOqfNiSesdDwOhDx9xPvPO+8QDs=",
       "url": "_framework\/Planner.Shared.dll.gz"
     },
@@ -1745,5 +1765,5 @@
       "url": "Planner.App.bundle.scp.css"
     }
   ],
-  "version": "DT4TMGKq"
+  "version": "EokeL2RK"
 };

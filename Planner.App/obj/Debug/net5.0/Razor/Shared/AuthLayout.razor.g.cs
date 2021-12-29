@@ -107,6 +107,13 @@ using MudBlazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 15 "C:\Github\Practice\Planner.App\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
     public partial class AuthLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
