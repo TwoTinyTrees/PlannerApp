@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tQWc9GurlF5n3j/v4r1pLrmfJkWLkB4ImBJQF8wHbIR0YvlI90OSzZBlB8LhDMSwNenbEEGCa1CmM5V4MeWhQg==",
+  "dgSpecHash": "KwE0g21QZODjcb57dhJM23HgXFxsBAH4kEwOF0RQl171UECX3q/yLMpmWPnmQcXjO6NwMIQtm5wbfg06kRuAUg==",
   "success": true,
-  "projectFilePath": "C:\\Github\\Tutorials\\BlazorWebAssembly\\PlannerApp\\Planner.App\\Planner.App.csproj",
+  "projectFilePath": "C:\\Github\\Practice\\Planner.App\\Planner.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jesse\\.nuget\\packages\\blazored.localstorage\\4.1.5\\blazored.localstorage.4.1.5.nupkg.sha512",
     "C:\\Users\\Jesse\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",

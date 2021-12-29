@@ -10,4 +10,4 @@ build_property.EnableSingleFileAnalyzer =
 build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Planner.App
-build_property.ProjectDir = C:\Github\Tutorials\BlazorWebAssembly\PlannerApp\Planner.App\
+build_property.ProjectDir = C:\Github\Practice\Planner.App\

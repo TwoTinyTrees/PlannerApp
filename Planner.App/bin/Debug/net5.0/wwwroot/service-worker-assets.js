@@ -9,12 +9,16 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     },
     {
-      "hash": "sha256-8Whxc1M\/p6XrqGsRLVSAhAvf6jtyvfC70dzg2fI7Rlc=",
+      "hash": "sha256-gE5FJja58mugUwd60i04nq2UakY3BtzoBTtvY1knY5k=",
       "url": "_framework\/blazor.boot.json"
     },
     {
       "hash": "sha256-ItMv+HytRb8SgPKYiz75PK0k+DFgN1E247PZT\/8lODs=",
       "url": "_framework\/Blazored.LocalStorage.dll"
+    },
+    {
+      "hash": "sha256-ICZwzUI5uclncCyLXRZWnt4YD5C\/Dgw\/TPJFuvg8HSs=",
+      "url": "_framework\/FluentValidation.dll"
     },
     {
       "hash": "sha256-v2n7Q6PfIiAvv9anCBl0llzwtdxr0iCZZar3ne8Bxds=",
@@ -825,19 +829,19 @@
       "url": "_framework\/dotnet.5.0.13.js"
     },
     {
-      "hash": "sha256-lVfl1qLwWBejKocDXXmRPivsk622OTNv6nnR2CA3ZIo=",
+      "hash": "sha256-NtHqzdQwI9WFpbbuzHWo8T8QEaLZk8cjUFpVenyIfoc=",
       "url": "_framework\/Planner.Shared.dll"
     },
     {
-      "hash": "sha256-laGSLiOCx1dcRpfZvIvHVR2k+l8TInSlBtEnET\/bsus=",
+      "hash": "sha256-dJ0uHjBfkb1wUO9Yc31pvJgA794QfCvysRMk8I6aM0w=",
       "url": "_framework\/Planner.Shared.pdb"
     },
     {
-      "hash": "sha256-lUrUB56SY1koBE7jjjOLZzXXQOfOtbHVDevQN4HOkWk=",
+      "hash": "sha256-m5Kj4du8nVXTWsLMlLFMXAkuELn24WAJyX2g91+hz+c=",
       "url": "_framework\/Planner.App.dll"
     },
     {
-      "hash": "sha256-gSmJfCFh7OQQYVImHjH2k6k0MhYylpQt45vATjfo3e4=",
+      "hash": "sha256-HXuV+efodGOumJ3FNaiXBqcLUJOlwzcN3\/VfJJ+rsjg=",
       "url": "_framework\/Planner.App.pdb"
     },
     {
@@ -847,6 +851,10 @@
     {
       "hash": "sha256-oVBXtft96+EfmewWuvFoHSqdmNLREmcH2yVLM\/+\/8OY=",
       "url": "_framework\/Blazored.LocalStorage.dll.gz"
+    },
+    {
+      "hash": "sha256-ladi\/wwf4o1fW84LjAok2\/90XWZ5PilWww8gr2WNGts=",
+      "url": "_framework\/FluentValidation.dll.gz"
     },
     {
       "hash": "sha256-IYdoktj2k9vK0YngFgWHvwvD\/6B3ksa0AG2wTqseAU8=",
@@ -1657,7 +1665,7 @@
       "url": "_framework\/dotnet.5.0.13.js.gz"
     },
     {
-      "hash": "sha256-VmrrdjVTPegmX7LiaY4dbta9Ue7LOevvIjKxAHD8Mt4=",
+      "hash": "sha256-078KeN0INmGsfPbbyOqfNiSesdDwOhDx9xPvPO+8QDs=",
       "url": "_framework\/Planner.Shared.dll.gz"
     },
     {
@@ -1737,5 +1745,5 @@
       "url": "Planner.App.bundle.scp.css"
     }
   ],
-  "version": "j2DDaAn0"
+  "version": "DT4TMGKq"
 };

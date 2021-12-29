@@ -1,5 +1,6 @@
 ﻿using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Planner.Shared.Models;
 using Planner.Shared.Responses;
 using System;
@@ -20,7 +21,7 @@ namespace Planner.App.Components
         public NavigationManager Navigation { get; set; }
 
         [Inject]
-        public JwtAuthenticationStateProvider AuthenticationStateProvider { get; set; }
+        public AuthenticationStateProvider AuthenticationStateProvider { get; set; }
 
         [Inject]
         public ILocalStorageService Storage { get; set; }

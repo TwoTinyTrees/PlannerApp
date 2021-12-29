@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9LtTRPYbqP0qmy24n9Jcs6m/nGK3ZK0M7aU12ArVZa/6FDvv2VhUwL1NrPSts98pPgLjKM+uNsOAlN2YOGLOeA==",
+  "dgSpecHash": "Q+p5Qs+bMk+TawE0/FMg4jTk1FyhosbUYfpq7G4eDPGu86GDoUX57XualEMcZz1Td71/JLzKCqsRJdIG0DCXIA==",
   "success": true,
-  "projectFilePath": "C:\\Github\\Tutorials\\BlazorWebAssembly\\PlannerApp\\Planner.Shared\\Planner.Shared.csproj",
+  "projectFilePath": "C:\\Github\\Practice\\Planner.Shared\\Planner.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jesse\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512"
   ],

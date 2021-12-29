@@ -24,7 +24,6 @@ namespace Planner.App
             builder.Services.AddTransient<AuthorizationMessageHandler>();
 
             builder.Services.AddScoped(sp => sp.GetService<IHttpClientFactory>().CreateClient("Planner.Api"));
-            builder.Services.AddScoped<JwtAuthenticationStateProvider>();
 
             builder.Services.AddMudServices();
             builder.Services.AddBlazoredLocalStorage();

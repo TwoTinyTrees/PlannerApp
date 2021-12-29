@@ -10,3 +10,15 @@ C:\Github\Tutorials\BlazorWebAssembly\PlannerApp\Planner.Shared\obj\Debug\net5.0
 C:\Github\Tutorials\BlazorWebAssembly\PlannerApp\Planner.Shared\obj\Debug\net5.0\Planner.Shared.dll
 C:\Github\Tutorials\BlazorWebAssembly\PlannerApp\Planner.Shared\obj\Debug\net5.0\ref\Planner.Shared.dll
 C:\Github\Tutorials\BlazorWebAssembly\PlannerApp\Planner.Shared\obj\Debug\net5.0\Planner.Shared.pdb
+C:\Github\Practice\Planner.Shared\bin\Debug\net5.0\Planner.Shared.deps.json
+C:\Github\Practice\Planner.Shared\bin\Debug\net5.0\Planner.Shared.dll
+C:\Github\Practice\Planner.Shared\bin\Debug\net5.0\ref\Planner.Shared.dll
+C:\Github\Practice\Planner.Shared\bin\Debug\net5.0\Planner.Shared.pdb
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.csproj.AssemblyReference.cache
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.AssemblyInfoInputs.cache
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.AssemblyInfo.cs
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.csproj.CoreCompileInputs.cache
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.dll
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\ref\Planner.Shared.dll
+C:\Github\Practice\Planner.Shared\obj\Debug\net5.0\Planner.Shared.pdb
