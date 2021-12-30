@@ -21,6 +21,12 @@ namespace Planner.App.Components
 
         protected async override Task OnInitializedAsync()
         {
+            await GetPlansAsync();
+        }
+
+        private async Task GetPlansAsync(int pageNumber = 1)
+        {
+            _pageNumber = pageNumber;
             _isBusy = true;
             _result = await FetchPlans?.Invoke(_query, _pageNumber, _pageSize);
             _isBusy = false;

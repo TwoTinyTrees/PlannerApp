@@ -2009,3 +2009,5 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanCard.
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanCardsList.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlansList.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Plans\Plans.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plans\PlansTable.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlansTable.razor.g.cs
