@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using MudBlazor;
 using Planner.Client.Services.Exceptions;
 using Planner.Client.Services.Interfaces;
 using Planner.Shared.Models;
@@ -16,6 +17,9 @@ namespace Planner.App.Components
 
         [Inject]
         private NavigationManager Navigation { get; set; }
+
+        [Inject]
+        public IDialogService DialogService { get; set; }
 
         private bool _isBusy = false;
         private string _errorMessage = string.Empty;
@@ -73,5 +77,26 @@ namespace Planner.App.Components
             Navigation.NavigateTo($"/plans/form/{plan.Id}");
         }
         #endregion Edit
+
+        #region Delete
+        private async Task DeletePlanAsync(PlanSummary plan)
+        {
+            var parameters = new DialogParameters();
+            parameters.Add("ContentText", $"Do you really want to delete the plan '{plan.Title}'?");
+            parameters.Add("ButtonText", "Delete");
+            parameters.Add("Color", Color.Error);
+
+            var options = new DialogOptions() { CloseButton = true, MaxWidth = MaxWidth.ExtraSmall };
+
+            var dialog = DialogService.Show<ConfirmationDialog>("Delete", parameters, options);
+            var confirmationResult = await dialog.Result;
+
+            if (!confirmationResult.Cancelled)
+            {
+                //Confirmed to delete
+                await PlansService.DeleteAsync(plan.Id);
+            }
+        }
+        #endregion Delete
     }
 }

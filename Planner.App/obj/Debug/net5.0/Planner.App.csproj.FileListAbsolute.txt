@@ -2035,3 +2035,5 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plan
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Pages\Plans\CreateEditPlan.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanForm.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Plans\CreateEditPlan.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Dialogs\ConfirmationDialog.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Dialogs\ConfirmationDialog.razor.g.cs
