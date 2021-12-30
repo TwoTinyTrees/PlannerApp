@@ -2031,3 +2031,7 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\Fq8Tru0+.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\JR3ftpfq.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\1sV59dR7.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\xolWUQ+T.gz
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plans\PlanForm.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Pages\Plans\CreateEditPlan.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanForm.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Plans\CreateEditPlan.razor.g.cs
