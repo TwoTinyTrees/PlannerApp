@@ -2011,3 +2011,5 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlansList
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Plans\Plans.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plans\PlansTable.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlansTable.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Layout\PAPage.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Layout\PAPage.razor.g.cs

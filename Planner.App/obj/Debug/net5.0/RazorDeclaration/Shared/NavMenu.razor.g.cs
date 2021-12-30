@@ -124,21 +124,6 @@ using Blazored.FluentValidation;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 28 "C:\Github\Practice\Planner.App\Shared\NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591
