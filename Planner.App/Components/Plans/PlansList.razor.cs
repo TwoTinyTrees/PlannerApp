@@ -49,5 +49,19 @@ namespace Planner.App.Components
             _isBusy = false;
             return null;
         }
+
+        #region View Toggler
+        private bool _isCardsViewEnabled = true;
+
+        private void SetCardsView()
+        {
+            _isCardsViewEnabled = true;
+        }
+
+        private void SetTableView()
+        {
+            _isCardsViewEnabled = false;
+        }
+        #endregion View Toggler
     }
 }

@@ -6,14 +6,14 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" OnClick="GoToPage">Authentication</MudButton>
+
 
 <AuthorizeView>
     <Authorized>
-        <h2>Welcome</h2>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" OnClick='() => GoToPage("Plans")'>See Plans</MudButton>
     </Authorized>
     <NotAuthorized>
-        <MudLink Href="/authentication/Login">Login</MudLink>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" OnClick='() => GoToPage("Login")'>Login</MudButton>
     </NotAuthorized>
 </AuthorizeView>
 

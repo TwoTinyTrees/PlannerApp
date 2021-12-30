@@ -13,9 +13,19 @@ namespace Planner.App.Pages
         [Inject]
         private NavigationManager NavigationManager { get; set; }
 
-        private void GoToPage()
-        {         
+        private void GoToPage(string page)
+        {
+            if (page == "Login")
+            {
+                _pageName = @"/authentication/" + page;
+            }
+            else
+            {
+                _pageName = page;
+            }
+
             NavigationManager.NavigateTo(_pageName);
         }
+
     }
 }
