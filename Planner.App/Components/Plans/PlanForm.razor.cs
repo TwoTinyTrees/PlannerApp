@@ -19,11 +19,24 @@ namespace Planner.App.Components
         [Inject]
         public NavigationManager Navigation { get; set; }
 
+        [Parameter]
+        public string Id { get; set; }
+
+        private bool _isEditMode => Id != null;
+
         private PlanDetail _model = new PlanDetail();
         private bool _isBusy = false;
         private Stream _stream = null;
         private string _fileName = string.Empty;
         private string _errorMessage = string.Empty;
+
+        protected override async Task OnInitializedAsync()
+        {
+            if (_isEditMode)
+            {
+                await FetchPlanByIdAsync();
+            }
+        }
 
         private async Task SubmitFormAsync()
         {
@@ -37,10 +50,15 @@ namespace Planner.App.Components
                     formFile = new FormFile(_stream, _fileName);
                 }
 
-                var result = await PlansService.CreateAsync(_model, formFile);
-
+                if (_isEditMode)
+                {
+                    await PlansService.EditAsync(_model, formFile);
+                }
+                else
+                {
+                    await PlansService.CreateAsync(_model, formFile);
+                }
                 // Success
-
                 Navigation.NavigateTo("/plans");
             }
             catch (ApiException ex)
@@ -49,7 +67,28 @@ namespace Planner.App.Components
             }
             catch (Exception ex)
             {
+                // TODO: Log the error
+                _errorMessage = ex.Message;
+            }
 
+            _isBusy = false;
+        }
+
+        private async Task FetchPlanByIdAsync()
+        {
+            _isBusy = true;
+
+            try
+            {
+                var result = await PlansService.GetByIdAsync(Id);
+                _model = result.Value;
+            }
+            catch (ApiException ex)
+            {
+                _errorMessage = ex.ApiErrorResponse.Message;
+            }
+            catch (Exception ex)
+            {
                 // TODO: Log the error
                 _errorMessage = ex.Message;
             }
