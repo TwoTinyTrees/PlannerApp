@@ -2001,3 +2001,11 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\hrhSDJJc.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\NTwmWYRK.gz
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Pages\Authentication\Register.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Authentication\Register.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plans\PlanCard.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plans\PlanCardsList.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Plans\PlansList.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Pages\Plans\Plans.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanCard.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanCardsList.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlansList.razor.g.cs
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Plans\Plans.razor.g.cs
