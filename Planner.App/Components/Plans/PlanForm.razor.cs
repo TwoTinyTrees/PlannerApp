@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
+using Planner.Client.Services.Exceptions;
 using Planner.Client.Services.Interfaces;
 using Planner.Shared.Models;
 using System;
@@ -15,6 +16,9 @@ namespace Planner.App.Components
         [Inject]
         public IPlansService PlansService { get; set; }
 
+        [Inject]
+        public NavigationManager Navigation { get; set; }
+
         private PlanDetail _model = new PlanDetail();
         private bool _isBusy = false;
         private Stream _stream = null;
@@ -23,7 +27,34 @@ namespace Planner.App.Components
 
         private async Task SubmitFormAsync()
         {
-            _errorMessage = "Done";
+            _isBusy = true;
+
+            try
+            {
+                FormFile formFile = null;
+                if (_stream != null)
+                {
+                    formFile = new FormFile(_stream, _fileName);
+                }
+
+                var result = await PlansService.CreateAsync(_model, formFile);
+
+                // Success
+
+                Navigation.NavigateTo("/plans");
+            }
+            catch (ApiException ex)
+            {
+                _errorMessage = ex.ApiErrorResponse.Message;
+            }
+            catch (Exception ex)
+            {
+
+                // TODO: Log the error
+                _errorMessage = ex.Message;
+            }
+
+            _isBusy = false;
         }
 
         private async Task OnChooseFileAsync(InputFileChangeEventArgs e)
