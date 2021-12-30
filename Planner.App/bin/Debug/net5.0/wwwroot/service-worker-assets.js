@@ -9,7 +9,7 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     },
     {
-      "hash": "sha256-TGWlgmXGtXUfEYffzwxuZXGBB0eLMVVfwck\/ht9eAs4=",
+      "hash": "sha256-0sKuf7rv9OUa8M56gyeSQDcUhkcWbuoBqpPlw1x76\/I=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -873,11 +873,11 @@
       "url": "_framework\/Planner.Shared.pdb"
     },
     {
-      "hash": "sha256-Sa9Xwp+GTEwMMSarBQjGbfwGAJAoj7pB8SqTlBMqYPE=",
+      "hash": "sha256-lrEPT8uugAwQ1PleM+PuWVLfv8EEaTM83Qg7EMOXEn4=",
       "url": "_framework\/Planner.App.dll"
     },
     {
-      "hash": "sha256-ebor5J\/xnkA5f3Mo90Wmhk3Dt5\/IEMRhZiKo0x+Zdkw=",
+      "hash": "sha256-IHcdXD2ohAiTwojARZfv1MZmpIxj8AgkKdGdDwJF+ik=",
       "url": "_framework\/Planner.App.pdb"
     },
     {
@@ -1813,5 +1813,5 @@
       "url": "Planner.App.bundle.scp.css"
     }
   ],
-  "version": "tpddUkQ4"
+  "version": "vQGglBbZ"
 };

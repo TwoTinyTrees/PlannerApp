@@ -14,6 +14,9 @@ namespace Planner.App.Components
         [Inject]
         public IPlansService PlansService { get; set; }
 
+        [Inject]
+        private NavigationManager Navigation { get; set; }
+
         private bool _isBusy = false;
         private string _errorMessage = string.Empty;
         private int _pageNumber = 1;
@@ -63,5 +66,12 @@ namespace Planner.App.Components
             _isCardsViewEnabled = false;
         }
         #endregion View Toggler
+
+        #region Edit
+        private void EditPlan(PlanSummary plan)
+        {
+            Navigation.NavigateTo($"/plans/form/{plan.Id}");
+        }
+        #endregion Edit
     }
 }
