@@ -66,5 +66,11 @@ namespace Planner.App.Components
 
             _isBusy = false;
         }
+
+        private void OnToDoItemAddedCallback(ToDoItemDetail todoItem)
+        {
+            Console.WriteLine(todoItem.Id);
+            Console.WriteLine(todoItem.Description);
+        }
     }
 }
