@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using AKSoftware.Blazor.Utilities;
+using Microsoft.AspNetCore.Components;
 using Planner.Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,15 @@ namespace Planner.App.Components
         public EventCallback<PlanSummary> OnDeleteClicked { get; set; }
 
         private PagedList<PlanSummary> _result = new();
+
+        protected override void OnInitialized()
+        {
+            MessagingCenter.Subscribe<PlansList, PlanSummary>(this, "plan_deleted", async (sender, args) =>
+            {
+                await GetPlansAsync(_pageNumber);
+                StateHasChanged();
+            });
+        }
 
         protected async override Task OnInitializedAsync()
         {

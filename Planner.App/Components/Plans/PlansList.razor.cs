@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using AKSoftware.Blazor.Utilities;
+using Microsoft.AspNetCore.Components;
 using MudBlazor;
 using Planner.Client.Services.Exceptions;
 using Planner.Client.Services.Interfaces;
@@ -94,7 +95,22 @@ namespace Planner.App.Components
             if (!confirmationResult.Cancelled)
             {
                 //Confirmed to delete
-                await PlansService.DeleteAsync(plan.Id);
+                try
+                {
+                    await PlansService.DeleteAsync(plan.Id);
+
+                    // Send a message about the deleted plan
+                    MessagingCenter.Send(this, "plan_deleted", plan);
+                }
+                catch (ApiException ex)
+                {
+                    // TODO: Log this error
+                }
+                catch (Exception ex)
+                {
+                    // TODO: Log this error
+                }
+
             }
         }
         #endregion Delete

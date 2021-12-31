@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "AKSoftware.Blazor.Utilities.dll": "sha256-od4G7K9ssy6pQ1u6\/YrqeA1d1oSUXxbJDbjL3NU7Urs=",
       "Blazored.FluentValidation.dll": "sha256-Yd+TgjggnGAP41alBqq4QQNW1P2sDk9W0RytHV+VFw8=",
       "Blazored.LocalStorage.dll": "sha256-ItMv+HytRb8SgPKYiz75PK0k+DFgN1E247PZT\/8lODs=",
       "FluentValidation.dll": "sha256-ICZwzUI5uclncCyLXRZWnt4YD5C\/Dgw\/TPJFuvg8HSs=",
@@ -213,7 +214,7 @@
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
       "Planner.Client.Services.dll": "sha256-hXbnuUSiC\/J2sHanVO9SVDAS5mieECVljlv4SmAG+ZU=",
       "Planner.Shared.dll": "sha256-Ubc\/TeMMJ9Pm933VjhXLFHOkMrGNMETE09yH1Jfz+Ic=",
-      "Planner.App.dll": "sha256-cCPSSeuFqOTy0MfvsZjNf8forz0NI74IKC73bUhdtCk="
+      "Planner.App.dll": "sha256-13qoqUd0sP1kT6Z7oVEQFpoqIKgZKYyxSEfniViaLx4="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -221,7 +222,7 @@
     "pdb": {
       "Planner.Client.Services.pdb": "sha256-GEw03pCqz58mONJ\/MNhO9KiAcLjDlib0bXOqGw4HLwo=",
       "Planner.Shared.pdb": "sha256-gJ2DhuTbu7Bks1dNxGv8JC+f6WdlebFBnQQN6Cay\/8k=",
-      "Planner.App.pdb": "sha256-LbUTlfd9HRj6DrHOimbUsTz28bXHIxmUR6aL965TFDE="
+      "Planner.App.pdb": "sha256-4D5gYVlq0j79cAwXdi0oF+Kiy\/wnmbNlTBcKWKTgHf4="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AKSoftware.Blazor.Utilities/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.7"
+        },
+        "compile": {
+          "lib/net5.0/AKSoftware.Blazor.Utilities.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/AKSoftware.Blazor.Utilities.dll": {}
+        }
+      },
       "Blazored.FluentValidation/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -589,6 +601,18 @@
       }
     },
     "net5.0/browser-wasm": {
+      "AKSoftware.Blazor.Utilities/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.7"
+        },
+        "compile": {
+          "lib/net5.0/AKSoftware.Blazor.Utilities.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/AKSoftware.Blazor.Utilities.dll": {}
+        }
+      },
       "Blazored.FluentValidation/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -1171,6 +1195,20 @@
     }
   },
   "libraries": {
+    "AKSoftware.Blazor.Utilities/1.0.0": {
+      "sha512": "/GfNeGT1qYs6SgxWRK083SKb6fLoUcnx5U1IB0y06Gq4LpeZ2nD/Rt+4IvZhFLgIhWUxoAKcDmdRFKb+6OMVIQ==",
+      "type": "package",
+      "path": "aksoftware.blazor.utilities/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazor Utitlies.png",
+        "LICENSE",
+        "aksoftware.blazor.utilities.1.0.0.nupkg.sha512",
+        "aksoftware.blazor.utilities.nuspec",
+        "lib/net5.0/AKSoftware.Blazor.Utilities.dll"
+      ]
+    },
     "Blazored.FluentValidation/2.0.3": {
       "sha512": "YL+E/JGoyVODn0azRJtmfK48iZXpD9Jy6fQOyofAl6F++ELMqupKygN/aG0QZd92j9eCV5syUmz0QYDwmS+3qA==",
       "type": "package",
@@ -2153,6 +2191,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AKSoftware.Blazor.Utilities >= 1.0.0",
       "Blazored.FluentValidation >= 2.0.3",
       "Blazored.LocalStorage >= 4.1.5",
       "Microsoft.AspNetCore.Components.Authorization >= 5.0.13",
@@ -2219,6 +2258,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AKSoftware.Blazor.Utilities": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Blazored.FluentValidation": {
             "target": "Package",
             "version": "[2.0.3, )"

@@ -2037,3 +2037,6 @@ C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Plans\PlanForm.
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Pages\Plans\CreateEditPlan.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\RazorDeclaration\Components\Dialogs\ConfirmationDialog.razor.g.cs
 C:\Github\Practice\Planner.App\obj\Debug\net5.0\Razor\Components\Dialogs\ConfirmationDialog.razor.g.cs
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\AKSoftware.Blazor.Utilities.dll.gz
+C:\Github\Practice\Planner.App\bin\Debug\net5.0\wwwroot\_framework\AKSoftware.Blazor.Utilities.dll
+C:\Github\Practice\Planner.App\obj\Debug\net5.0\build-gz\bdJwVRez.gz
