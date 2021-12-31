@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32002.261
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planner.Shared", "Planner.Shared\Planner.Shared.csproj", "{02622227-8193-480B-A481-DD0CD0B29C4D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planner.App", "Planner.App\Planner.App.csproj", "{9AF718C5-65D1-4161-91A2-315FA72515B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planner.Client.Services", "Planner.Client.Services\Planner.Client.Services.csproj", "{DEE683F6-0D91-47A2-9CC8-2E6D629428A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planner.Client.Services", "Planner.Client.Services\Planner.Client.Services.csproj", "{DEE683F6-0D91-47A2-9CC8-2E6D629428A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

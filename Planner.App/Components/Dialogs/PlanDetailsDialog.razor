@@ -9,13 +9,13 @@
             }
             else
             {
-                <text>@_plan?.Title</text>
+                <text>@_plan.Title</text>
             }
         </MudText>
     </TitleContent>
     <DialogContent>
         <MudGrid>
-            <MudItem sm="12" md="6">
+            <MudItem sm="12" md="5">
                 @if (_isBusy)
                 {
                     <MudSkeleton Animation="Animation.Wave" SkeletonType="SkeletonType.Rectangle" Height="40px" Style="min-width:250px"/>
@@ -30,7 +30,7 @@
                 }
 
             </MudItem>
-            <MudItem sm="12" md="6">
+            <MudItem sm="12" md="7">
                 <!-- Items go here -->
                 @if (_isBusy)
                 {
@@ -43,6 +43,12 @@
                 else
                 {
                     <!-- Plan's items go here -->
+                    <ToDoItem />
+                    <ToDoItem />
+                    <ToDoItem />
+                    <ToDoItem />
+                    <ToDoItem />
+                    <ToDoItem />
                 }
             </MudItem>
         </MudGrid>

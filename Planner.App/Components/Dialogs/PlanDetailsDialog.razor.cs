@@ -52,6 +52,7 @@ namespace Planner.App.Components
                 var result = await PlansService.GetByIdAsync(PlanId);
                 _plan = result.Value;
                 StateHasChanged();
+                _isBusy = false;
             }
             catch (ApiException ex)
             {
