@@ -212,17 +212,17 @@
       "mscorlib.dll": "sha256-0qsbc1acYr3S6P7t9gSYyghOhMVs3CTJ9ukQ1VXqksY=",
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
-      "Planner.Client.Services.dll": "sha256-hXbnuUSiC\/J2sHanVO9SVDAS5mieECVljlv4SmAG+ZU=",
-      "Planner.Shared.dll": "sha256-Ubc\/TeMMJ9Pm933VjhXLFHOkMrGNMETE09yH1Jfz+Ic=",
-      "Planner.App.dll": "sha256-13qoqUd0sP1kT6Z7oVEQFpoqIKgZKYyxSEfniViaLx4="
+      "Planner.Client.Services.dll": "sha256-GFybILWLJZztF2+yqnv+29XA1a4a1AZgYI0R+C1RBGw=",
+      "Planner.Shared.dll": "sha256-X2I6ofvXWpcONOyIEm6VCnOpSP2TdpSQqwOkDix\/e28=",
+      "Planner.App.dll": "sha256-98nGHBI1ZPo5k9sNVSv0\/fkRSBc4evBXP9Q4hyD7i9I="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Planner.Client.Services.pdb": "sha256-GEw03pCqz58mONJ\/MNhO9KiAcLjDlib0bXOqGw4HLwo=",
-      "Planner.Shared.pdb": "sha256-gJ2DhuTbu7Bks1dNxGv8JC+f6WdlebFBnQQN6Cay\/8k=",
-      "Planner.App.pdb": "sha256-4D5gYVlq0j79cAwXdi0oF+Kiy\/wnmbNlTBcKWKTgHf4="
+      "Planner.Client.Services.pdb": "sha256-w8vsx+dsw7oNYSBvqa7xjUKNFlCMvr93LCYcAENV080=",
+      "Planner.Shared.pdb": "sha256-0yyn\/6xS7IxmcR1xSOHHmnRttslPfTdAwnKlJ6U0aO8=",
+      "Planner.App.pdb": "sha256-eAea7hiCGaE9anjZJtzKj3usRCvtttifxxmMlKK6DkE="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",
