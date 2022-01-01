@@ -35,11 +35,15 @@ namespace Planner.App.Components
         [Parameter]
         public EventCallback<ToDoItemDetail> OnItemDeleted { get; set; }
 
+        [Parameter]
+        public EventCallback<ToDoItemDetail> OnItemEdited { get; set; }
+
         private bool _isChecked = true;
 
         private bool _isEditMode = false;
         private bool _isBusy = false;
         private string _description = String.Empty;
+        private string _errorMessage = String.Empty;
 
         private void ToggleEditMode(bool isCancel)
         {
@@ -71,6 +75,37 @@ namespace Planner.App.Components
             catch (ApiException ex)
             {
                 // TODO: handle errors
+            }
+            catch (Exception ex)
+            {
+                // TODO: log errors
+            }
+
+            _isBusy = false;
+        }
+
+        private async Task EditItemAsync()
+        {
+            _errorMessage = String.Empty;
+            try
+            {
+                if (string.IsNullOrWhiteSpace(_description))
+                {
+                    _errorMessage = "Description is required";
+                    return;
+                }
+                _isBusy = true;
+
+                // call the API to add the item
+                var result = await ToDoItemsService.EditAsync(Item.Id, _description, Item.PlanId);
+                ToggleEditMode(false);
+
+                //Notify the parent about the newly added item
+                await OnItemEdited.InvokeAsync(result.Value);
+            }
+            catch (ApiException ex)
+            {
+                _errorMessage = ex.Message;
             }
             catch (Exception ex)
             {
