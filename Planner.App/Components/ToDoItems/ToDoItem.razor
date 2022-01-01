@@ -16,7 +16,14 @@
         {
             <MudText Typo="Typo.body1" Class="flex-grow-1 flex-shrink-0 mr-2" Style="cursor:pointer" @onclick="() => ToggleEditMode(false)">@Item.Description</MudText>
 
-            <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" aria-label="delete" Class="flex-grow-0 flex-shrink-0 mr-2"></MudIconButton>
+            @if (_isBusy)
+            {
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" Class="flex-grow-0 flex-shrink-0 mr-2"/>
+            }
+            else
+            {
+                <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" aria-label="delete" Class="flex-grow-0 flex-shrink-0 mr-2" OnClick="RemoveItemAsync"/>
+            }
         }
       
 </div>

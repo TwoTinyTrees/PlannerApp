@@ -19,18 +19,26 @@ using Planner.App.Components;
 using MudBlazor;
 using Blazored.FluentValidation;
 using Planner.Shared.Models;
+using Planner.Client.Services.Interfaces;
+using Planner.Client.Services.Exceptions;
 
 namespace Planner.App.Components
 {
     public partial class ToDoItem
     {
+        [Inject]
+        private IToDoItemsService ToDoItemsService { get; set; }
+
         [Parameter]
         public ToDoItemDetail Item { get; set; }
+
+        [Parameter]
+        public EventCallback<ToDoItemDetail> OnItemDeleted { get; set; }
 
         private bool _isChecked = true;
 
         private bool _isEditMode = false;
-
+        private bool _isBusy = false;
         private string _description = String.Empty;
 
         private void ToggleEditMode(bool isCancel)
@@ -45,7 +53,31 @@ namespace Planner.App.Components
                 _isEditMode = true;
                 _description = Item.Description;
             }
+        }
 
+        private async Task RemoveItemAsync()
+        {
+            try
+            {
+                _isBusy = true;
+
+                // call the API to add the item
+                await ToDoItemsService.DeleteAsync(Item.Id);
+                _description = string.Empty;
+
+                //Notify the parent about the newly added item
+                await OnItemDeleted.InvokeAsync(Item);
+            }
+            catch (ApiException ex)
+            {
+                // TODO: handle errors
+            }
+            catch (Exception ex)
+            {
+                // TODO: log errors
+            }
+
+            _isBusy = false;
         }
     }
 }
