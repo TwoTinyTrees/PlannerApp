@@ -2,13 +2,16 @@
 
 <MudPaper Elevation="1" Class="mt-2 px-3">
 <div class="d-flex flex-row align-center">
-    <MudCheckBox @bind-Checked="@_isChecked" Color="Color.Primary" Class="flex-grow-0 flex-shrink-0 mr-2"></MudCheckBox>
+    <MudCheckBox T="bool" Checked="@_isChecked" CheckedChanged="ToggleItemAsync" Color="Color.Primary" Class="flex-grow-0 flex-shrink-0 mr-2"></MudCheckBox>
 
     @if (_isEditMode)
         {
-            <MudTextField @bind-Value="_description" Label="Description" Variant="Variant.Outlined" Margin="Margin.Dense" Error="@(!string.IsNullOrWhiteSpace(_errorMessage))" ErrorText="@_errorMessage"></MudTextField>
+            <MudTextField @bind-Value="_description" Label="Description" Variant="Variant.Outlined" Margin="Margin.Dense"  Class="flex-grow-0 flex-shrink-0 mr-1"
+                        Error="@(!string.IsNullOrWhiteSpace(_errorMessage))" 
+                        ErrorText="@_errorMessage" />
 
-            <MudIconButton Icon="@Icons.Material.Filled.Cancel" Color="Color.Primary" aria-label="delete" Class="flex-grow-0 flex-shrink-0 mr-1" OnClick="() => ToggleEditMode(true)" />
+            <MudIconButton Icon="@Icons.Material.Filled.Cancel" Color="Color.Primary" aria-label="delete" Class="flex-grow-0 flex-shrink-0 mr-1" 
+                        OnClick="() => ToggleEditMode(true)" />
 
             @if (_isBusy)
             {
@@ -16,13 +19,18 @@
             }
             else
             {
-                <MudIconButton Icon="@Icons.Material.Filled.Save" Color="Color.Success" aria-label="delete" Class="flex-grow-0 flex-shrink-0 mr-2" OnClick="EditItemAsync"/>
+                <MudIconButton Icon="@Icons.Material.Filled.Save" Color="Color.Success" aria-label="delete" Class="flex-grow-0 flex-shrink-0 mr-2" 
+                        OnClick="EditItemAsync"/>
             }
             
         }
         else
         {
-            <MudText Typo="Typo.body1" Class="flex-grow-1 flex-shrink-0 mr-2" Style="cursor:pointer" @onclick="() => ToggleEditMode(false)">@Item.Description</MudText>
+            <MudText Typo="Typo.body1" Class="flex-grow-1 flex-shrink-0 mr-2" 
+                    Style="@_descriptionStyle" 
+                    @onclick="() => ToggleEditMode(false)">
+                    @Item.Description
+            </MudText>
 
             @if (_isBusy)
             {
