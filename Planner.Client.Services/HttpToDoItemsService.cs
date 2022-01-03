@@ -70,7 +70,7 @@ namespace Planner.Client.Services
 
         public async Task ToggleAsync(string id)
         {
-            var response = await _httpClient.PutAsJsonAsync<object>("/api/v2/todos/toggle/{id}", null);
+            var response = await _httpClient.PutAsJsonAsync<object>($"/api/v2/todos/toggle/{id}", null);
 
             if (!response.IsSuccessStatusCode)
             {
