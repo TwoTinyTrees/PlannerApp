@@ -29,6 +29,9 @@ namespace Planner.App.Components
         [Inject]
         private IToDoItemsService ToDoItemsService { get; set; }
 
+        [CascadingParameter]
+        public Error Error { get; set; }
+
         [Parameter]
         public ToDoItemDetail Item { get; set; }
 
@@ -85,6 +88,7 @@ namespace Planner.App.Components
             catch (Exception ex)
             {
                 // TODO: log errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;
@@ -116,6 +120,7 @@ namespace Planner.App.Components
             catch (Exception ex)
             {
                 // TODO: log errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;
@@ -142,6 +147,7 @@ namespace Planner.App.Components
             catch (Exception ex)
             {
                 // TODO: log errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;

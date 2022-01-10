@@ -7,10 +7,24 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
+    [CascadingParameter]
+    public Error Error { get; set; }
+
     private int currentCount = 0;
 
     private void IncrementCount()
     {
-        currentCount++;
+        try
+        {
+            currentCount++;
+            if (currentCount == 5)
+            {
+                throw new ArgumentOutOfRangeException("current count cannot be greater than or equal to 5");
+            }
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            Error.HandleError(ex);
+        }
     }
 }

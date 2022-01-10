@@ -1,6 +1,7 @@
 ﻿using AKSoftware.Blazor.Utilities;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using Planner.App.Shared;
 using Planner.Client.Services.Exceptions;
 using Planner.Client.Services.Interfaces;
 using Planner.Shared.Models;
@@ -21,6 +22,9 @@ namespace Planner.App.Components
 
         [Inject]
         public IDialogService DialogService { get; set; }
+
+        [CascadingParameter]
+        public Error Error { get; set; }
 
         private bool _isBusy = false;
         private string _errorMessage = string.Empty;
@@ -50,8 +54,8 @@ namespace Planner.App.Components
             }
             catch (Exception ex)
             {
-                // TODO log error
-                _errorMessage = ex.Message;
+                // Handle errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;
@@ -108,7 +112,8 @@ namespace Planner.App.Components
                 }
                 catch (Exception ex)
                 {
-                    // TODO: Log this error
+                    // Handle errors
+                    Error.HandleError(ex);
                 }
 
             }

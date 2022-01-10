@@ -1,6 +1,7 @@
 ﻿using AKSoftware.Blazor.Utilities;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using Planner.App.Shared;
 using Planner.Client.Services.Interfaces;
 using Planner.Shared.Models;
 using System;
@@ -14,6 +15,9 @@ namespace Planner.App.Components
     {
         [Inject]
         public IPlansService PlansService { get; set; }
+
+        [CascadingParameter]
+        public Error Error { get; set; }
 
         [Parameter]
         public EventCallback<PlanSummary> OnViewClicked { get; set; }
@@ -39,12 +43,25 @@ namespace Planner.App.Components
 
         private async Task<TableData<PlanSummary>> ServerReloadAsync(TableState state)
         {
-            var result = await PlansService.GetPlansAsync(_query, state.Page, state.PageSize);
+            try
+            {
+                var result = await PlansService.GetPlansAsync(_query, state.Page, state.PageSize);
+
+                return new TableData<PlanSummary>
+                {
+                    Items = result.Value.Records,
+                    TotalItems = result.Value.ItemsCount
+                };
+            }
+            catch (Exception ex)
+            {
+                Error.HandleError(ex);
+            }
 
             return new TableData<PlanSummary>
             {
-                Items = result.Value.Records,
-                TotalItems = result.Value.ItemsCount
+                Items = new List<PlanSummary>(),
+                TotalItems = 0
             };
         }
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using Planner.App.Shared;
 using Planner.Client.Services.Exceptions;
 using Planner.Client.Services.Interfaces;
 using Planner.Shared.Models;
@@ -17,6 +18,9 @@ namespace Planner.App.Components
 
         [Inject]
         public IPlansService PlansService { get; set; }
+
+        [CascadingParameter]
+        public Error Error { get; set; }
 
         [Parameter]
         public string PlanId { get; set; }
@@ -64,6 +68,7 @@ namespace Planner.App.Components
             {
 
                 // TODO: Log errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;

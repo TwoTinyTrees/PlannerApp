@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
+using Planner.App.Shared;
 using Planner.Client.Services.Exceptions;
 using Planner.Client.Services.Interfaces;
 using Planner.Shared.Models;
@@ -18,6 +19,9 @@ namespace Planner.App.Components
 
         [Inject]
         public NavigationManager Navigation { get; set; }
+
+        [CascadingParameter]
+        public Error Error { get; set; }
 
         [Parameter]
         public string Id { get; set; }
@@ -67,8 +71,8 @@ namespace Planner.App.Components
             }
             catch (Exception ex)
             {
-                // TODO: Log the error
-                _errorMessage = ex.Message;
+                // Handle errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;
@@ -89,8 +93,8 @@ namespace Planner.App.Components
             }
             catch (Exception ex)
             {
-                // TODO: Log the error
-                _errorMessage = ex.Message;
+                // Handle errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;

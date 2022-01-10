@@ -29,6 +29,9 @@ namespace Planner.App.Components
         [Inject]
         public IToDoItemsService ToDoItemsService { get; set; }
 
+        [CascadingParameter]
+        public Error Error { get; set; }
+
         [Parameter]
         public string PlanId { get; set; }
 
@@ -69,6 +72,7 @@ namespace Planner.App.Components
             {
 
                 // TODO: log errors
+                Error.HandleError(ex);
             }
 
             _isBusy = false;
