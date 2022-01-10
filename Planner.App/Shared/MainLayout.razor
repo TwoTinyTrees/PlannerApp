@@ -6,6 +6,7 @@
         <MudText Typo="Typo.h5" Class="ml-3">Planner</MudText>
         <MudSpacer />
         <LoginDisplay />
+        <MudIconButton Icon="@Icons.Filled.ColorLens" Color="Color.Default" OnClick="ChangeThemeAsync"/>
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
@@ -15,6 +16,6 @@
     </MudMainContent>
 </MudLayout>
 
-<MudThemeProvider />
+<MudThemeProvider Theme="@_currentTheme"/>
 <MudDialogProvider />
 <MudSnackbarProvider />
