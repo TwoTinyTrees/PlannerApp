@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AKSoftware.Localization.MultiLanguages;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Components
 {
@@ -19,6 +21,9 @@ namespace Planner.App.Components
 
         [Inject]
         public NavigationManager Navigation { get; set; }
+
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
 
         [CascadingParameter]
         public Error Error { get; set; }
@@ -36,6 +41,8 @@ namespace Planner.App.Components
 
         protected override async Task OnInitializedAsync()
         {
+            Language.InitLocalizedComponent(this);
+
             if (_isEditMode)
             {
                 await FetchPlanByIdAsync();
@@ -108,7 +115,7 @@ namespace Planner.App.Components
             {
                 if (file.Size >= 2097152)
                 {
-                    _errorMessage = "The file must be less than or equal to 2MB";
+                    _errorMessage = Language["FileSizeLimitError"];
                     return;
                 }
 
@@ -118,7 +125,7 @@ namespace Planner.App.Components
 
                 if (!allowedExtensions.Contains(extension))
                 {
-                    _errorMessage = "Please choose a valid image file";
+                    _errorMessage = Language["InvalidImageFile"];
                     return;
                 }
 

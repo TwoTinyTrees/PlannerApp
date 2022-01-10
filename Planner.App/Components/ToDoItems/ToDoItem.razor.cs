@@ -21,6 +21,8 @@ using Blazored.FluentValidation;
 using Planner.Shared.Models;
 using Planner.Client.Services.Interfaces;
 using Planner.Client.Services.Exceptions;
+using AKSoftware.Localization.MultiLanguages;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Components
 {
@@ -28,6 +30,9 @@ namespace Planner.App.Components
     {
         [Inject]
         private IToDoItemsService ToDoItemsService { get; set; }
+
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
 
         [CascadingParameter]
         public Error Error { get; set; }
@@ -51,6 +56,7 @@ namespace Planner.App.Components
 
         protected override void OnInitialized()
         {
+            Language.InitLocalizedComponent(this);
             _isChecked = Item.IsDone;
         }
 

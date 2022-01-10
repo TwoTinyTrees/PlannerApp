@@ -6,15 +6,15 @@
     <MudCard>
         <MudCardHeader>
             <CardHeaderContent>
-                <MudText Typo="Typo.h6">Welcome to the Planner Application</MudText>
+                <MudText Typo="Typo.h6">@Language["WelcomeTo"] Planner App</MudText>
             </CardHeaderContent>
         </MudCardHeader>
         <MudCardContent>
-            <MudTextField Label="Email" HelperText="Required" @bind-Value="@_model.Email" />
-            <MudTextField Label="First name" HelperText="Required" @bind-Value="@_model.FirstName" />
-            <MudTextField Label="Last name" HelperText="Required" @bind-Value="@_model.LastName" />
-            <MudTextField InputType="InputType.Password" Label="Password" HelperText="Required" @bind-Value="@_model.Password" />
-            <MudTextField InputType="InputType.Password" Label="Confirm password" HelperText="Required" @bind-Value="@_model.ConfirmPassword" />
+            <MudTextField Label=@Language["WelcomeTo"] HelperText=@Language["Required"] @bind-Value="@_model.Email" />
+            <MudTextField Label=@Language["FirstName"] HelperText=@Language["Required"] @bind-Value="@_model.FirstName" />
+            <MudTextField Label=@Language["LastName"] HelperText=@Language["Required"] @bind-Value="@_model.LastName" />
+            <MudTextField InputType="InputType.Password" Label=@Language["Password"] HelperText=@Language["Required"] @bind-Value="@_model.Password" />
+            <MudTextField InputType="InputType.Password" Label=@Language["Confirm Password"] HelperText=@Language["Required"] @bind-Value="@_model.ConfirmPassword" />
 
             <ValidationSummary />
 
@@ -24,8 +24,8 @@
             }
         </MudCardContent>
         <MudCardActions>
-            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Disabled="_isBusy">Create Account</MudButton>
-            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" OnClick="RedirectToLogin" Class="ml-1" Disabled="_isBusy">Login</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Disabled="_isBusy">@Language["Register"]</MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" OnClick="RedirectToLogin" Class="ml-1" Disabled="_isBusy">@Language["Login"]</MudButton>
         </MudCardActions>
     </MudCard>
 </EditForm>

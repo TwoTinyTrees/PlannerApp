@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AKSoftware.Localization.MultiLanguages;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Components
 {
@@ -18,6 +20,9 @@ namespace Planner.App.Components
 
         [Inject]
         public IPlansService PlansService { get; set; }
+
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
 
         [CascadingParameter]
         public Error Error { get; set; }
@@ -46,6 +51,7 @@ namespace Planner.App.Components
 
         protected async override Task OnInitializedAsync()
         {
+            Language.InitLocalizedComponent(this);
             await FetchPlanAsync();
         }
 

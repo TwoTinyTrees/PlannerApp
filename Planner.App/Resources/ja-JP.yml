@@ -1,0 +1,32 @@
+GeneralError: 何かがうまくいかなかった!後でもう一度お試しください。
+Home: 家
+Plans: 計画
+AddPlan: プランの追加
+About: に関しては
+WelcomeTo: プランナーアプリケーションへようこそ
+Email: 電子メール
+Required: 必須
+Password: パスワード
+ConfirmPassword: パスワードの確認
+Login: ログイン
+Register: アカウントの作成
+FirstName: 名前
+LastName: 名字
+Cancel: キャンセル
+PlanDetails: プランの詳細
+Title: タイトル
+Description: 形容
+LoadPicture: 画像を読み込む
+Save: セーブ
+FileSizeLimitError: ファイルは 2MB 以下である必要があります
+InvalidImageFile: 有効なイメージ ファイルを選択してください
+Cover: 覆う
+Actions: アクション
+NewItemDescription: 新しいアイテム説明
+NewItemPlaceholder: ジムに行く
+Close: 閉める
+CreateNewPlan: 新しいプランを作成する
+Optional: 随意
+DescriptionRequired: 説明が必要です
+Welcome: ようこそ
+Logout: ログアウト

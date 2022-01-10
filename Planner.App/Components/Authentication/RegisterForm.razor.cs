@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Planner.Client.Services.Exceptions;
 using Planner.App.Shared;
+using AKSoftware.Localization.MultiLanguages;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Components
 {
@@ -18,12 +20,20 @@ namespace Planner.App.Components
         [Inject]
         public NavigationManager Navigation { get; set; }
 
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
+
         [CascadingParameter]
         public Error Error  { get; set; }
 
         private RegisterRequest _model = new();
         private bool _isBusy = false;
         private string _errorMessage = string.Empty;
+
+        protected override void OnInitialized()
+        {
+            Language.InitLocalizedComponent(this);
+        }
 
         private async Task RegisterUserAsync()
         {

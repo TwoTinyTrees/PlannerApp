@@ -1,4 +1,5 @@
-﻿using Blazored.LocalStorage;
+﻿using AKSoftware.Localization.MultiLanguages;
+using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using Planner.Shared.Models;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Components
 {
@@ -26,9 +28,17 @@ namespace Planner.App.Components
         [Inject]
         public ILocalStorageService Storage { get; set; }
 
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
+
         private LoginRequest _model = new LoginRequest();
         private bool _isBusy = false;
         private string _errorMessage = string.Empty;
+
+        protected override void OnInitialized()
+        {
+            Language.InitLocalizedComponent(this);
+        }
 
         private async Task LoginUserAsync()
         {

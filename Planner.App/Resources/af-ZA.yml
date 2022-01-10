@@ -1,0 +1,32 @@
+GeneralError: Iets het verkeerd gegaan! Probeer asseblief later weer.
+Home: Huis
+Plans: Planne
+AddPlan: Voeg plan by
+About: Oor
+WelcomeTo: Welkom by die Beplanner Aansoek
+Email: E-pos
+Required: Vereis
+Password: Wagwoord
+ConfirmPassword: Bevestig wagwoord
+Login: Aanteken
+Register: Skep rekening
+FirstName: Eerste naam
+LastName: Laaste naam
+Cancel: Kanselleer
+PlanDetails: Beplan Besonderhede
+Title: Titel
+Description: Beskrywing
+LoadPicture: Laai Prent
+Save: Stoor
+FileSizeLimitError: Die lêer moet gelyk of minder as 2MB wees
+InvalidImageFile: Kies asseblief 'n geldige beeldlêer
+Cover: Bedek
+Actions: Aksies
+NewItemDescription: Nuwe item beskrywing
+NewItemPlaceholder: Gaan na die gimnasium
+Close: Sluit
+CreateNewPlan: Skep 'n nuwe plan
+Optional: Opsioneel
+DescriptionRequired: Beskrywing word vereis
+Welcome: Welkom
+Logout: Logout

@@ -21,6 +21,8 @@ using Blazored.FluentValidation;
 using Planner.Client.Services.Interfaces;
 using Planner.Client.Services.Exceptions;
 using Planner.Shared.Models;
+using AKSoftware.Localization.MultiLanguages;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Components
 {
@@ -28,6 +30,9 @@ namespace Planner.App.Components
     {
         [Inject]
         public IToDoItemsService ToDoItemsService { get; set; }
+
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
 
         [CascadingParameter]
         public Error Error { get; set; }
@@ -43,6 +48,10 @@ namespace Planner.App.Components
 
         private string _errorMessage = string.Empty;
 
+        protected override void OnInitialized()
+        {
+            Language.InitLocalizedComponent(this);
+        }
         private async Task AddToDoItemAsync()
         {
             _errorMessage = string.Empty;
@@ -51,7 +60,7 @@ namespace Planner.App.Components
             {
                 if (string.IsNullOrWhiteSpace(_description))
                 {
-                    _errorMessage = "Description is required";
+                    _errorMessage = Language["DescriptionRequired"];
                     return;
                 }
 

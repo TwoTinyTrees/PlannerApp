@@ -1,0 +1,32 @@
+GeneralError: มีบางอย่างผิดพลาด! โปรดลองอีกครั้งในภายหลัง
+Home: บ้าน
+Plans: แผน
+AddPlan: เพิ่มแผน
+About: ประมาณ
+WelcomeTo: ยินดีต้อนรับสู่แอปพลิเคชันวางแผน
+Email: อีเมล
+Required: ต้องระบุ
+Password: รหัสผ่าน
+ConfirmPassword: ยืนยันรหัสผ่าน
+Login: เข้า สู่ ระบบ
+Register: สร้างบัญชีผู้ใช้
+FirstName: ชื่อ
+LastName: นามสกุล
+Cancel: ยกเลิก
+PlanDetails: รายละเอียดแผน
+Title: ชื่อเรื่อง
+Description: การบรรยาย
+LoadPicture: โหลดรูปภาพ
+Save: ประหยัด
+FileSizeLimitError: แฟ้มต้องเท่ากับหรือน้อยกว่า 2MB
+InvalidImageFile: โปรดเลือกแฟ้มรูปที่ถูกต้อง
+Cover: คลุม
+Actions: การกระทํา
+NewItemDescription: คําอธิบายรายการใหม่
+NewItemPlaceholder: ไปยิม
+Close: ปิด
+CreateNewPlan: สร้างแผนใหม่
+Optional: เสริม
+DescriptionRequired: ต้องระบุคําอธิบาย
+Welcome: ต้อนรับ
+Logout: ออกจากระบบ

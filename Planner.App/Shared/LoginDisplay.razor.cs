@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Authorization;
+using AKSoftware.Localization.MultiLanguages;
+using AKSoftware.Localization.MultiLanguages.Blazor;
 
 namespace Planner.App.Shared
 {
@@ -16,7 +18,16 @@ namespace Planner.App.Shared
         [Inject]
         private NavigationManager Navigation { get; set; }
 
-        [Inject] AuthenticationStateProvider AuthenticationStateProvider { get; set; }
+        [Inject] 
+        public AuthenticationStateProvider AuthenticationStateProvider { get; set; }
+
+        [Inject]
+        public ILanguageContainerService Language { get; set; }
+
+        protected override void OnInitialized()
+        {
+            Language.InitLocalizedComponent(this);
+        }
 
         private async Task LogOutAsync()
         {

@@ -6,7 +6,7 @@
 
     @if (_isEditMode)
         {
-            <MudTextField @bind-Value="_description" Label="Description" Variant="Variant.Outlined" Margin="Margin.Dense"  Class="flex-grow-0 flex-shrink-0 mr-1"
+            <MudTextField @bind-Value="_description" Label=@Language["Description"] Variant="Variant.Outlined" Margin="Margin.Dense"  Class="flex-grow-0 flex-shrink-0 mr-1"
                         Error="@(!string.IsNullOrWhiteSpace(_errorMessage))" 
                         ErrorText="@_errorMessage" />
 
